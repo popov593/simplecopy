@@ -1,5 +1,5 @@
 <?php
-  require_once('../../../wp-config.php');
+require_once('../wp-config.php');
 
 //MySQL server and database
 $dbhost = DB_HOST;
@@ -84,7 +84,7 @@ function backup_tables($host, $user, $pass, $dbname, $tables = '*') {
     }
 
     //save file
-    $fileName = '../../database_by_simplecopy_'.date('d-m-Y-H-i-s').'.sql';
+    $fileName = '../wp-content/database_by_simplecopy_'.date('d-m-Y-H-i-s').'.sql';
     $handle = fopen($fileName,'w+');
     fwrite($handle,$return);
     if(fclose($handle)){
