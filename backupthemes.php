@@ -1,11 +1,11 @@
 <?php
 ///Zip Function
 // Get real path for our folder
-$rootPath = realpath('../../themes/');
+$rootPath = realpath('../wp-content/themes/');
 
 // Initialize archive object
 $zip = new ZipArchive();
-$zip->open('../../themes_by_simplecopy_'.date('d-m-Y-H-i-s').'h.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE);
+$zip->open('../wp-content/themes_by_simplecopy_'.date('d-m-Y-H-i-s').'h.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
 // Create recursive directory iterator
 /** @var SplFileInfo[] $files */
