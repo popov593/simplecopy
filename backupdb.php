@@ -1,15 +1,11 @@
 <?php
-
-/**
-* Updated: Mohammad M. AlBanna
-* Website: MBanna.info
-*/
+  require_once('../../../wp-config.php');
 
 //MySQL server and database
-$dbhost = 'localhost';
-$dbuser = '';
-$dbpass = '';
-$dbname = '';
+$dbhost = DB_HOST;
+$dbuser = DB_USER;
+$dbpass = DB_PASSWORD;
+$dbname = DB_NAME;
 $tables = '*';
 
 //Call the core function
