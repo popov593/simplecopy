@@ -1,11 +1,11 @@
 <?php
 ///Zip Function
 // Get real path for our folder
-$rootPath = realpath('../../plugins/');
+$rootPath = realpath('../wp-content/plugins/');
 
 // Initialize archive object
 $zip = new ZipArchive();
-$zip->open('../../plugins_by_simplecopy_'.date('d-m-Y-H-i-s').'.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE);
+$zip->open('../wp-content/plugins_by_simplecopy_'.date('d-m-Y-H-i-s').'.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
 // Create recursive directory iterator
 /** @var SplFileInfo[] $files */
