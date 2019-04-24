@@ -1,4 +1,6 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 ///Zip Function
 // Get real path for our folder
 $rootPath = realpath('../wp-content/plugins/');
